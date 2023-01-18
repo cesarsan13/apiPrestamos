@@ -19,8 +19,13 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'ap_paterno',
+        'ap_materno',
+        'email',
         'email',
         'password',
+        'baja',
+        'id_rol',
     ];
 
     /**
@@ -41,4 +46,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function role()
+    {   //primero se declara FK y despues la PK del modelo asociado
+        return $this->belongsTo(Role::class,'id_rol','id_rol');
+    }
+
 }
