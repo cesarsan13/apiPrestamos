@@ -20,6 +20,7 @@ class UserSeeder extends Seeder
             'ap_paterno'=>'Esquivel',
             'ap_materno'=>'Monreal',
             'email'=>'suculento.el@gmail.com',
+            'username'=>'meya_esquivel',
             'password'=>'bubu2206',
             'baja'=>'',
             'role_id'=>1
@@ -30,6 +31,7 @@ class UserSeeder extends Seeder
             'ap_paterno'=>'Sanchez',
             'ap_materno'=>'Tapia',
             'email'=>'cesaromarsancheztapia@gmail.com',
+            'username'=>'cesar_san13',
             'password'=>'costcesar',
             'baja'=>'',
             'role_id'=>1
