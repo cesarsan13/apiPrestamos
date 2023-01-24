@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('pago__prestamos', function (Blueprint $table) {
             $table->id();
             $table->foreignId('id_prestamo')->constrined('prestamos','id');
-            $table->string("fecha_pago");
-            $table->string("hora_pago");
-            $table->double("monto");
-            $table->string("ticket_transferencia");
+            $table->string("fecha_pago",10);
+            $table->string("hora_pago",10);
+            $table->double("monto",8,2);
+            $table->string("ticket_transferencia",250);
             $table->timestamps();
         });
     }

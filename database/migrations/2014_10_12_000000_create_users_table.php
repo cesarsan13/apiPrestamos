@@ -15,12 +15,12 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('nombres');
-            $table->string('ap_paterno');
-            $table->string('ap_materno');
-            $table->string('email')->unique();
-            $table->string('password');
-            $table->string('baja');
+            $table->string('nombres',150);
+            $table->string('ap_paterno',75);
+            $table->string('ap_materno',100);
+            $table->string('email',150)->unique();
+            $table->string('password',200);
+            $table->string('baja',1);
             $table->foreignId('role_id')->constrined('roles','role_id');
             $table->rememberToken();
             $table->timestamps();

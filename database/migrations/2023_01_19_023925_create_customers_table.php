@@ -15,18 +15,18 @@ return new class extends Migration
     {
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
-            $table->string('nombres');
-            $table->string('ap_paterno');
-            $table->string('ap_materno');
-            $table->string('fecha_nacimiento');
-            $table->string('direccion');
-            $table->string('colonia');
-            $table->string('cp');
-            $table->string('telefono');
-            $table->string('capacidad');
-            $table->string('credencial1');
-            $table->string('credencial2');
-            $table->string('baja');
+            $table->string('nombres',100);
+            $table->string('ap_paterno',75);
+            $table->string('ap_materno',75);
+            $table->string('fecha_nacimiento',10);
+            $table->string('direccion',150);
+            $table->string('colonia',75);
+            $table->string('cp',10);
+            $table->string('telefono',10);
+            $table->double('capacidad',8,2);
+            $table->string('credencial1',250);
+            $table->string('credencial2',250);
+            $table->string('baja',1);
             $table->timestamps();
         });
     }
