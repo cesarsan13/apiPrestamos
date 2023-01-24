@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('ap_paterno',75);
             $table->string('ap_materno',100);
             $table->string('email',150)->unique();
+            $table->string('username',150)->unique();
             $table->string('password',200);
             $table->string('baja',1);
             $table->foreignId('role_id')->constrined('roles','role_id');
