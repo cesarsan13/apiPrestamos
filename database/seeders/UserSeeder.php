@@ -32,7 +32,7 @@ class UserSeeder extends Seeder
             'ap_materno'=>'Tapia',
             'email'=>'cesaromarsancheztapia@gmail.com',
             'username'=>'cesar_san13',
-            'password'=>'costcesar',
+            'password'=>'costcesar13',
             'baja'=>'',
             'role_id'=>1
         ]);
