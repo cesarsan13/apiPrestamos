@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Crypt;
 class UserSeeder extends Seeder
 {
     /**
@@ -21,7 +22,7 @@ class UserSeeder extends Seeder
             'ap_materno'=>'Monreal',
             'email'=>'suculento.el@gmail.com',
             'username'=>'meya_esquivel',
-            'password'=>'bubu2206',
+            'password'=>Crypt::encryptString('bubu2206'),
             'baja'=>'',
             'role_id'=>1
         ]);
@@ -32,7 +33,7 @@ class UserSeeder extends Seeder
             'ap_materno'=>'Tapia',
             'email'=>'cesaromarsancheztapia@gmail.com',
             'username'=>'cesar_san13',
-            'password'=>'costcesar13',
+            'password'=>Crypt::encryptString('costcesar13'),
             'baja'=>'',
             'role_id'=>1
         ]);
